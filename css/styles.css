@@ -1,0 +1,319 @@
+/* Цвета */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+}
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ul,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* logo */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  font-family: Raleway;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.web {
+  color: var(--accent-color);
+}
+
+/* site nav */
+.main-nav,
+.site-nav-full {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+.header-contact .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.header-contact .contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.header-contact .contacts:hover,
+.header-contact .contacts:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+}
+.hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+/* advantage */
+.advantage {
+  display: flex;
+}
+.advantage .item {
+  width: calc((100%-90px) / 4);
+}
+.advantage .item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantage .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+
+.advantage .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* works type */
+.section-works-type {
+  padding-top: 0;
+}
+.works-type {
+  display: flex;
+}
+.works-type .item:not(:last-child) {
+  margin-right: 30px;
+}
+.works-type .image {
+  display: block;
+}
+
+/* team */
+.team {
+  display: flex;
+}
+.team .item {
+  text-align: center;
+  padding-bottom: 30px;
+  width: calc((100%-90px) / 4);
+}
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-team {
+  background-color: #f5f4fa;
+}
+.team .photo {
+  margin-bottom: 30px;
+  display: block;
+}
+.team .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--title-text-color);
+}
+.team .text {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  color: var(--primary-bg-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.footer-web {
+  color: var(--accent-color);
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address .contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address .street {
+  color: var(--primary-bg-color);
+}
+
+.address .contacts:hover,
+.address .contacts:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio */
+.btns-portfolio {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.button-portfolio {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--title-text-color);
+}
+.btns-portfolio .item:not(:last-child) {
+  margin-right: 8px;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.work-examples .item {
+  width: 370px;
+  margin: 15px;
+}
+.work-examples .item-title-text {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+/* .work-examples .item:nth-child(3n) {
+  margin-right: 0px;
+}
+.work-examples .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+.work-examples .image {
+  display: block;
+}
+.work-examples .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.work-examples .text {
+  font-size: 16px;
+  line-height: 1.87;
+}
